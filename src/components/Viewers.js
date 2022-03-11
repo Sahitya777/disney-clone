@@ -33,6 +33,8 @@ const Container= styled.div`
 `
 const Wrap=styled.div`
 
+    height:70%;
+    width:80%;
     border: 3px solid rgba(249,249,249,0.1);
     border-radius: 10px;
     cursor: pointer;

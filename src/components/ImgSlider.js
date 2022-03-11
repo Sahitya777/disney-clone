@@ -42,7 +42,7 @@ const ImgSlider = (props) => {
 };
 
 const Carousel = styled(Slider)`
-  margin-top: 20px;
+  margin-top: 5px;
   & > button {
     opacity: 0;
     height: 100%;
@@ -87,7 +87,7 @@ const Wrap = styled.div`
     padding: 4px;
     img {
       width: 100%;
-      height: 100%;
+      height: 70%;
     }
     &:hover {
       padding: 0;
