@@ -4,11 +4,33 @@ function Detail() {
   return (
     <Container>
         <Background>
-            <img src="/images/movie.png"/>
+            <img src="/images/lead.jpg"/>
         </Background>
         <Imagetitle>
             <img src="/images/viewers-disney.png"/>
         </Imagetitle>
+        <Controls>
+            <PlayButton>
+                <img src="/images/play-icon-black.png"/>
+                <span>PLAY</span>
+            </PlayButton>
+            <TrailerButton>
+                <img src="/images/play-icon-white.png"/>
+                <span>Trailer</span>
+            </TrailerButton>
+            <AddButton>
+                <span>+</span>
+            </AddButton>
+            <GroupWatchButton>
+                <img src="/images/group-icon.png"/>
+            </GroupWatchButton>
+        </Controls>
+        <SubTitle>
+            2018 . 7m . Family, Fantasy, Kids, Animation
+        </SubTitle>
+        <Description>
+        The film is about an aging and lonely Chinese Canadian mother suffering from empty nest syndrome, who receives an unexpected second chance at motherhood when she makes a steamed bun (baozi) that comes to life.
+        </Description>
     </Container>
   )
 }
@@ -50,3 +72,68 @@ const Imagetitle=styled.div`
         object-fit:contain;
     }
 `
+
+const Controls=styled.div`
+    display:flex;
+    align-items:center;
+
+`
+
+const PlayButton=styled.button`
+    border-radius:4px;
+    font-size:15px;
+    padding:0px 24px;
+    margin-right:22px;
+    display:flex;
+    align-items:center;
+    height:56px;
+    background: rgb(249,249,249);
+    border:none;
+    letter-spacing:1.8px;
+    cursor:pointer;
+
+    &:hover{
+        background: rgb(198,198,198);
+    }
+`
+
+const TrailerButton=styled(PlayButton)`
+    background:rgba(0,0,0,0.3);
+    border:1px solid rgb(249,249,249);
+    color:rgb(249,249,249);
+    text-transform:uppercase;
+`
+const AddButton=styled.button`
+    height:44px;
+    width:44px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    border:2px solid white;
+    background-color:rgba(0,0,0,0.6);
+    cursor:white;
+    margin-right:16px;
+    span{
+        font-size:30px;
+        color:white;
+    }
+`
+const GroupWatchButton=styled(AddButton)`
+    background: rgb(0,0,0);
+`
+
+const SubTitle=styled.div`
+    color:rgb(249,249,249);
+    font-size:15px;
+    min-height:20px;
+    margin-top:26px;
+`
+const Description=styled.div`
+    line-height:1.4;
+    font-size:20px;
+    margin-top:16px;
+    color:rgb(249,249,249);
+`
+
+ 
