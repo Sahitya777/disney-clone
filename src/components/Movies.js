@@ -26,11 +26,13 @@ function Movies() {
 export default Movies
 
 const Container = styled.div`
-    
+    overflow:hidden;
+    width:90%;
+    height:90%;
 `
 const Content=styled.div`
     display:grid;
-    grid-gap:25px;
+    grid-gap:55px;
     grid-template-columns: repeat(4, minmax(0,1fr));
 `
 const Wrap=styled.div`
