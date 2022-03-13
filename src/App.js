@@ -22,7 +22,7 @@ function App() {
 
           </Route>
           <Route path="/detail" element={<Detail/>}>
-            
+            vvv
           </Route>
           <Route path="/" element={<Home/>}>
             
